@@ -1,3 +1,5 @@
+import BankAccount.BankAccountType;
+
 /**
  * Implement a bank class.
  * <p>
@@ -9,8 +11,15 @@
  */
 public class Bank {
 
+    // static variable is a fixed variable (every object of that class has it
+    /**
+     * Declaring a public string bankName.
+     */
     public String bankName;
 
+    /**
+     * Public constructor for Bank.
+     */
     public Bank() {
         bankName = "Illini Bank";
     }
@@ -26,6 +35,7 @@ public class Bank {
      * @return boolean
      */
     public boolean withdrawMoney(final BankAccount bankAccount, final double amount) {
+        return false;
         /*
          * Implement this function
          */
@@ -42,6 +52,7 @@ public class Bank {
      * @return boolean
      */
     public boolean depositMoney(final BankAccount bankAccount, final double amount) {
+        return false;
         /*
          * Implement this function
          */
@@ -61,6 +72,7 @@ public class Bank {
 
     public boolean transferMoney(final BankAccount source, final BankAccount destination,
             final double amount) {
+                return false;
         /*
          * Implement this function
          */
@@ -86,6 +98,19 @@ public class Bank {
      * @return the total number of accounts
      */
     public static int getNumberOfAccount() {
+        return totalAccounts;
+        /*
+         * Implement this function
+         */
+    }
+    /**
+     * Uses static variable to get number of bank accounts opened.
+     *
+     * @return the total number of accounts
+     * @param num is an int.
+     */
+    public static int setNumberOfAccount(int num) {
+        return this.totalAccounts = num;
         /*
          * Implement this function
          */
